@@ -1,0 +1,11 @@
+<h1>afisha - Afisha Film</h1>
+<ul>
+    {% for i in product_list %}
+    <a href="/products/{{ i.id }}">
+        <li>
+            <strong>Name:</strong> {{ i.name }}<br>
+            <strong>Director:</strong> {{ i.director }}<br>
+        </li>
+    <a/>
+    {% endfor %}
+</ul>
